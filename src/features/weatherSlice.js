@@ -19,7 +19,7 @@ const weatherSlice = createSlice({
             state.status = "loading";
         },
         [fetchWeather.fulfilled]: (state, action) => {
-            state.status = "succeeed";
+            state.status = "succeed";
             state.data = action.payload;
         },
         [fetchWeather.rejected]: (state, action) => {
